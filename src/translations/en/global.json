@@ -1,0 +1,73 @@
+{
+    "auth": {
+        "username": "Username",
+        "password": "Password",
+        "login": "Login"
+    },
+    
+    "topbar": {
+        "title": "Welcome to Seller Dashboard!",
+        "logout": "Logout"
+    },
+    
+    "dashboard": {
+        "orders": "Orders",
+        "sales_quality": "Sales quality",
+        "sales_tips": "Sales tips",
+        "buyers_reviews": "Buyers reviews",
+        "sales_chart": "Sales chart",
+        "ranking_of_offers": "Ranking of offers"
+    },
+
+    "orders": {
+        "unpaid": "Unpaid:",
+        "not_sent": "Not sent:",
+        "returns": "Returns:"
+    },
+
+    "sales_quality": {
+        "opinion": "Good seller"
+    },
+
+    "sales_tips": {
+        "title": "What you can improve?",
+        "shipping_rate": "Shipping rate",
+        "answer_rate": "Answer rate",
+        "packaging_quality": "Packaging quality"
+    },
+
+    "buyers_reviews": {
+        "all": "All",
+        "positive": "Positive",
+        "negative": "Negative",
+        "first_review": "I recommend",
+        "second_review": "I waited a long time for shipment",
+        "third_review": "Everything's all right",
+        "fourth_review": "Order is ok, but poor contact with the seller",
+        "fifth_review": "OK"
+    },
+
+    "sales_chart": {
+        "edit": "Edit",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+    },
+
+    "ranking_of_offers": {
+        "sort": "Sort",
+        "book": "Book",
+        "notebook": "Notebook",
+        "scissors": "Scissors",
+        "pen": "Pen",
+        "pencil": "Pencil"
+    },
+
+    "other": {
+        "go_back": "Go back"
+    }
+}

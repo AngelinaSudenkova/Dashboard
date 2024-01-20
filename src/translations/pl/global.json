@@ -1,0 +1,73 @@
+{
+    "auth": {
+        "username": "Nazwa użytkownika",
+        "password": "Hasło",
+        "login": "Zaloguj"
+    },
+
+    "topbar": {
+        "title": "Witaj w Panelu Sprzedawcy!",
+        "logout": "Wyloguj"
+    },
+    
+    "dashboard": {
+        "orders": "Zamówienia",
+        "sales_quality": "Jakość sprzedaży",
+        "sales_tips": "Porady sprzedażowe",
+        "buyers_reviews": "Opinie kupujących",
+        "sales_chart": "Wykres sprzedaży",
+        "ranking_of_offers": "Ranking ofert"
+    },
+
+    "orders": {
+        "unpaid": "Nieopłacone:",
+        "not_sent": "Niewysłane:",
+        "returns": "Zwroty:"
+    },
+
+    "sales_quality": {
+        "opinion": "Dobry sprzedawca"
+    },
+
+    "sales_tips": {
+        "title": "Co możesz poprawić?",
+        "shipping_rate": "Szybkość wysyłki",
+        "answer_rate": "Szybkość odpowiedzi",
+        "packaging_quality": "Jakość zapakowania wysyłki"
+    },
+
+    "buyers_reviews": {
+        "all": "Wszystkie",
+        "positive": "Pozytywne",
+        "negative": "Negatywne",
+        "first_review": "Polecam",
+        "second_review": "Długo czekałem na wysyłkę",
+        "third_review": "Wszystko w porządku",
+        "fourth_review": "Zamówienie okej, ale słaby kontakt ze sprzedającym",
+        "fifth_review": "OK"
+    },
+
+    "sales_chart": {
+        "edit": "Edytuj",
+        "monday": "Poniedziałek",
+        "tuesday": "Wtorek",
+        "wednesday": "Środa",
+        "thursday": "Czwartek",
+        "friday": "Piątek",
+        "saturday": "Sobota",
+        "sunday": "Niedziela"
+    },
+
+    "ranking_of_offers": {
+        "sort": "Sortuj",
+        "book": "Książka",
+        "notebook": "Zeszyt",
+        "scissors": "Nożyczki",
+        "pen": "Długopis",
+        "pencil": "Ołówek"
+    },
+
+    "other": {
+        "go_back": "Wróć"
+    }
+}

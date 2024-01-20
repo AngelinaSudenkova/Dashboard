@@ -1,5 +1,5 @@
 import { Box, IconButton, useTheme } from "@mui/material";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ColorModeContext } from "../theme";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
@@ -8,11 +8,14 @@ import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import Button from "@mui/material/Button";
 import { fakeAuthProvider } from "../auth/auth";
 import { useNavigate } from "react-router";
+import { useTranslation } from "react-i18next";
 
 const Topbar = () => {
   const theme = useTheme();
   const colorMode = useContext(ColorModeContext);
   const navigate = useNavigate();
+  const [t, i18n] = useTranslation("global");
+  const [language, setLanguage] = useState("pl");
 
   const handleLogout = () => {
     fakeAuthProvider.signOut(() => {
@@ -20,16 +23,21 @@ const Topbar = () => {
     });
   };
 
+  const toggleLanguage = () => {
+    setLanguage((curr) => (curr === "en" ? "pl" : "en"));
+    i18n.changeLanguage(language);
+  }
+
   return (
     <Box display="flex" justifyContent="space-between" p={2}>
       <Box display="flex" paddingLeft="10px">
-        <h2>Witaj w Panelu Sprzedawcy!</h2>
+        <h1>{t("topbar.title")}</h1>
       </Box>
       <Box display="flex">
         <IconButton>
           <AccountCircleRoundedIcon />
         </IconButton>
-        <IconButton>
+        <IconButton onClick={() => toggleLanguage()}>
           <LanguageOutlinedIcon />
         </IconButton>
         <IconButton onClick={colorMode.toggleColorMode}>
@@ -47,7 +55,7 @@ const Topbar = () => {
             size="small"
             onClick={handleLogout}
           >
-            Logout
+            {t("topbar.logout")}
           </Button>
         </Box>
       </Box>

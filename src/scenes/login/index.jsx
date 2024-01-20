@@ -6,11 +6,13 @@ import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import { useState } from "react";
 import { fakeAuthProvider } from "../../auth/auth";
 import { Navigate, useNavigate } from "react-router";
+import { useTranslation } from "react-i18next";
 
 const Login = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
+  const [t, i18n] = useTranslation("global");
 
   const navigate = useNavigate();
 
@@ -69,7 +71,7 @@ const Login = () => {
           <AccountCircleRoundedIcon fontSize="large" />
           <div> </div>
           <TextField
-            placeholder="Username"
+            placeholder={t("auth.username")}
             fullWidth
             required
             sx={textFieldStyle}
@@ -77,7 +79,7 @@ const Login = () => {
             onChange={handleUsernameChange}
           />
           <TextField
-            placeholder="Password"
+            placeholder={t("auth.password")}
             type="password"
             fullWidth
             required
@@ -91,7 +93,7 @@ const Login = () => {
             size="medium"
             onClick={handleSubmit}
           >
-            Login
+            {t("auth.login")}
           </Button>
         </Grid>
       </Paper>

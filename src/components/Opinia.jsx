@@ -1,12 +1,12 @@
-
 import React from 'react';
 import { Box, Typography, useTheme, Grid, Button} from "@mui/material";
 import { tokens } from "../theme";
 import StarIcon from '@mui/icons-material/Star';
 
 const Opinia = ({rating, comment})=> {
-const theme = useTheme();
-const colors = tokens(theme.palette.mode);
+
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
   
   return (
     <Box mt ="20px" paddingLeft="10px">

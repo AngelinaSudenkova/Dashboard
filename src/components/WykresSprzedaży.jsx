@@ -1,10 +1,14 @@
 import React from 'react';
 import { Box, Typography, useTheme, Button } from "@mui/material";
 import { tokens } from "../theme";
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import WykresKolowy from './WykresKolowy';
 
 const WykresSprzedaży = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  const [t, i18n] = useTranslation("global");
 
   return (
     <Box position="relative"> 
@@ -13,7 +17,7 @@ const WykresSprzedaży = () => {
         fontWeight="bold"
         sx={{ color: colors.primary[600] }}
       >
-        Wykres sprzedaży
+       <Link to="/wykres" style={{ textDecoration: 'none', color: 'inherit',  borderBottom: '1px solid' }}>{t("dashboard.sales_chart")}</Link>
       </Typography>
       <Box
         sx={{
@@ -39,14 +43,11 @@ const WykresSprzedaży = () => {
             style={{ backgroundColor: "#9C9C9C", color: colors.primary[100], borderRadius: "1px" }}
             size="small"
           >
-            Edytuj
+            {t("sales_chart.edit")}
           </Button>
         </Box>
-
         <Box display="block" justifyContent="space-between" mt="10px">
-       
-        {/*Place for plot to be displayed*/}
-
+          <WykresKolowy />
         </Box>
       </Box>
     </Box>
