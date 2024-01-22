@@ -12,6 +12,7 @@ import JakoscStrona from "./scenes/jakosc_sprzedazy";
 import OpinieStrona from "./scenes/opinie_kupujacych";
 import WykresStrona from "./scenes/wykres_sprzedazy";
 import RankingStrona from "./scenes/ranking_ofert";
+import EdycjaWykresuStrona from "./scenes/edycja_wykresu";
 
 export default function App() {
   const [theme, colorMode] = useMode();
@@ -42,6 +43,7 @@ export default function App() {
                 <Route path="opinie" element={<OpinieStrona/>}/>
                 <Route path="wykres" element={<WykresStrona/>}/>
                 <Route path="ranking" element={<RankingStrona/>}/>
+                <Route path="edycja" element={<EdycjaWykresuStrona/>}/>
               </Route>
               <Route path="/login" element={<Login />} />
             </Routes>

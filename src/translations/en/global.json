@@ -55,7 +55,22 @@
         "thursday": "Thursday",
         "friday": "Friday",
         "saturday": "Saturday",
-        "sunday": "Sunday"
+        "sunday": "Sunday",
+        "edit_data": "Edit sales chart data",
+        "turnover": "Turnover",
+        "no_pieces": "Number of pieces sold",
+        "data": "Data presented in the chart:",
+        "time": "Time range:",
+        "today": "Today",
+        "curr_week": "Current week",
+        "last_week": "Last week",
+        "type": "Chart type:",
+        "pie": "Pie chart",
+        "line": "Line chart",
+        "save": "Save",
+        "cancel": "Cancel",
+        "op1": "You can select several time ranges.",
+        "op2": "Your chart will have more series."
     },
 
     "ranking_of_offers": {
@@ -64,7 +79,11 @@
         "notebook": "Notebook",
         "scissors": "Scissors",
         "pen": "Pen",
-        "pencil": "Pencil"
+        "pencil": "Pencil",
+        "sort1": "Descending by number of pieces sold",
+        "sort2": "Descending by turnover",
+        "sort3": "Descending by number of views",
+        "sort4": "Ascending by number of pieces sold"
     },
 
     "other": {

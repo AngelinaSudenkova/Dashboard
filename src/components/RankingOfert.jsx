@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Typography, useTheme, Grid, Button} from "@mui/material";
+import { Box, Typography, useTheme, FormControl, InputLabel, Select, MenuItem} from "@mui/material";
 import { tokens } from "../theme";
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -23,7 +23,7 @@ const RankingOfert = () => {
         sx={{
           position: 'relative',  
           width: 360,
-          height: 300,
+          height: 360,
           borderRadius: 1,
           bgcolor: 'primary.main',
           '&:hover': {
@@ -39,18 +39,31 @@ const RankingOfert = () => {
             margin: '10px',
           }}
         >
-          <Button
-            style={{ backgroundColor: "#9C9C9C", color: colors.primary[100], borderRadius: "1px" }}
-            size="small"
+        <FormControl sx={{ color: colors.primary[100], minWidth: 85, height: 40, width: "auto" }}>
+          <InputLabel 
+            sx={{ color: colors.primary[100] }}
+            id="label"
           >
             {t("ranking_of_offers.sort")}
-          </Button>
+          </InputLabel>
+          <Select
+            style={{ backgroundColor: "#9C9C9C", color: colors.primary[100], minHeight: 40, maxHeight: 40 }}
+            labelId="label"
+            id="demo-simple-select-helper"
+            label="Sort"
+          >
+            <MenuItem value={'op1'}>{t("ranking_of_offers.sort1")}</MenuItem>
+            <MenuItem value={'op2'}>{t("ranking_of_offers.sort2")}</MenuItem>
+            <MenuItem value={'op3'}>{t("ranking_of_offers.sort3")}</MenuItem>
+            <MenuItem value={'op4'}>{t("ranking_of_offers.sort4")}</MenuItem>
+          </Select>
+        </FormControl>
         </Box>
 
         <Box display="block" justifyContent="space-between" mt="10px">
           <div style={{
             marginLeft: '20px',
-            paddingTop: '5px'
+            paddingTop: '60px'
           }}>
             <Lista />
           </div>

@@ -14,9 +14,9 @@ const Zamowienia = ({ title, nieoplacone, niewyslane, zwroty }) => {
     variant="h4"
     fontWeight="bold"
     sx={{ color: colors.primary[600] }}
-  >
+    >
     <Link to="/zamowienia" style={{ textDecoration: 'none', color: 'inherit',  borderBottom: '1px solid' }}>{t("dashboard.orders")}</Link>
-     
+    
    </Typography>
   <Box
     sx={{

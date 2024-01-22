@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, useTheme, Button } from "@mui/material";
 import { tokens } from "../theme";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import WykresKolowy from './WykresKolowy';
 
@@ -9,6 +9,7 @@ const WykresSprzedaży = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [t, i18n] = useTranslation("global");
+  const navigate = useNavigate();
 
   return (
     <Box position="relative"> 
@@ -37,11 +38,15 @@ const WykresSprzedaży = () => {
             top: 0,
             right: 0,
             margin: '10px',
+            zIndex: 1
           }}
         >
           <Button
             style={{ backgroundColor: "#9C9C9C", color: colors.primary[100], borderRadius: "1px" }}
             size="small"
+            onClick={() => {
+              navigate("/edycja");
+            }}
           >
             {t("sales_chart.edit")}
           </Button>

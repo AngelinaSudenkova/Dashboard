@@ -55,7 +55,22 @@
         "thursday": "Czwartek",
         "friday": "Piątek",
         "saturday": "Sobota",
-        "sunday": "Niedziela"
+        "sunday": "Niedziela",
+        "edit_data": "Edytuj dane wykresu sprzedaży",
+        "turnover": "Obrót",
+        "no_pieces": "Liczba sprzedanych sztuk",
+        "data": "Dane prezentowane na wykresie:",
+        "time": "Zakres czasu:",
+        "today": "Dzisiaj",
+        "curr_week": "Obecny tydzień",
+        "last_week": "Poprzedni tydzień",
+        "type": "Rodzaj wykresu:",
+        "pie": "Wykres kołowy",
+        "line": "Wykres liniowy",
+        "save": "Zapisz",
+        "cancel": "Anuluj",
+        "op1": "Możesz wybrać kilka zakresów czasu.",
+        "op2": "Twój wykres będzie miał więcej serii."
     },
 
     "ranking_of_offers": {
@@ -64,7 +79,11 @@
         "notebook": "Zeszyt",
         "scissors": "Nożyczki",
         "pen": "Długopis",
-        "pencil": "Ołówek"
+        "pencil": "Ołówek",
+        "sort1": "Malejąco wg. liczby sprzedanych sztuk",
+        "sort2": "Malejąco wg. obrotu",
+        "sort3": "Malejąco wg. liczby wyświetleń",
+        "sort4": "Rosnąco wg. liczby sprzedanych sztuk"
     },
 
     "other": {
